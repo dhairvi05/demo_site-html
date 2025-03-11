@@ -1,0 +1,854 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    background-color: #2E4053;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1;
+    animation: fadeIn 2s;
+}
+
+#logo {
+    margin-right: 20px;
+}
+
+.logo {
+    height: 130px;
+    width: 120px;
+}
+
+#tabs {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.tabs {
+    background: transparent;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+#register {
+    height: 40px;
+    width: 120px;
+    border-radius: 10%;
+    background-color: #66CCCC;
+    border: 0;
+    color: #2E4053;
+    font-size: 15px;
+}
+
+#justcolor {
+    background: linear-gradient(#2E4053, #66CCCC);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s;
+}
+
+#color {
+    text-align: center;
+    width: 80%;
+}
+
+.color {
+    color: #66CCCC;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #66CCCC;
+}
+
+.intro {
+    font-size: 20px;
+    color: #66CCCC;
+}
+
+.register {
+    height: 40px;
+    width: 120px;
+    border-radius: 10%;
+    background-color: #66CCCC;
+    border: 0;
+    color: #2E4053;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.image-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-image {
+    height: 350px;
+    width: 350px;
+}
+
+#box2 {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #66CCCC;
+}
+
+.events {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    animation: fadeIn 2s;
+}
+
+.one, .two {
+    text-align: center;
+}
+
+.poster {
+    height: 250px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.ugh-hr {
+    background-color: #2E4053;
+    padding: 20px;
+    animation: fadeIn 2s;
+}
+
+.last {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.last_logo {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.copy {
+    font-size: 18px;
+}
+
+.logos {
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+}
+
+hr {
+    border-color: white;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+} */
+
+/* Animations */
+/* .animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 2s;
+}
+
+.animate-fadeInDown {
+    animation: fadeInDown 2s;
+}
+
+.animate-fadeInLeft {
+    animation: fadeInLeft 2s;
+}
+
+.animate-fadeInRight {
+    animation: fadeInRight 2s;
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 2s;
+}
+
+.animate-zoomIn {
+    animation: zoomIn 2s;
+}
+
+.animate-flipInX {
+    animation: flipInX 2s;
+}
+
+.animate-flipInY {
+    animation: flipInY 2s;
+}
+
+.animate-slideInLeft {
+    animation: slideInLeft 2s;
+}
+
+.animate-slideInUp {
+    animation: slideInUp 2s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+}
+
+@keyframes flipInX {
+    from {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes flipInY {
+    from {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+/* @media (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .logo {
+        height: 100px;
+        width: 90px;
+    }
+    
+    #tabs {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    #register {
+        margin-top: 10px;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    .intro {
+        font-size: 18px;
+    }
+    
+    .register {
+        height: 30px;
+        width: 90px;
+        font-size: 15px;
+    }
+    
+    .image-container {
+        position: relative;
+        height: 250px;
+        width: 250px;
+        margin: 20px auto;
+    }
+    
+    .side-image {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .events {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .one, .two {
+        margin-bottom: 20px;
+    }
+    
+    .poster {
+        height: 200px;
+        width: 150px;
+    }
+    
+    .ugh-hr {
+        padding: 10px;
+    }
+    
+    .last {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .last_logo {
+        font-size: 40px;
+    }
+    
+    .copy {
+        font-size: 16px;
+    }
+    
+    .logos {
+        height: 40px;
+        width: 40px;
+        margin: 5px;
+    }
+}  */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    background-color: #2E4053;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1;
+    animation: fadeIn 2s;
+}
+
+#logo {
+    margin-right: 20px;
+}
+
+.logo {
+    height: 130px;
+    width: 120px;
+}
+
+#tabs {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.tabs {
+    background: transparent;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+#register {
+    height: 40px;
+    width: 120px;
+    border-radius: 10%;
+    background-color: #66CCCC;
+    border: 0;
+    color: #2E4053;
+    font-size: 15px;
+}
+
+#justcolor {
+    background: linear-gradient(#2E4053, #66CCCC);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s;
+}
+
+#color {
+    text-align: center;
+    width: 80%;
+}
+
+.color {
+    color: #66CCCC;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #66CCCC;
+}
+
+.intro {
+    font-size: 20px;
+    color: #66CCCC;
+}
+
+.register {
+    height: 40px;
+    width: 120px;
+    border-radius: 10%;
+    background-color: #66CCCC;
+    border: 0;
+    color: #2E4053;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.image-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-image {
+    height: 350px;
+    width: 350px;
+}
+
+#box2 {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #66CCCC;
+}
+
+.events {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    animation: fadeIn 2s;
+}
+
+.one, .two {
+    text-align: center;
+}
+
+.poster {
+    height: 250px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.ugh-hr {
+    background-color: #2E4053;
+    padding: 20px;
+    animation: fadeIn 2s;
+}
+
+.last {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.last_logo {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.copy {
+    font-size: 18px;
+}
+
+.logos {
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+}
+
+hr {
+    border-color: white;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Animations */
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 2s;
+}
+
+.animate-fadeInDown {
+    animation: fadeInDown 2s;
+}
+
+.animate-fadeInLeft {
+    animation: fadeInLeft 2s;
+}
+
+.animate-fadeInRight {
+    animation: fadeInRight 2s;
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 2s;
+}
+
+.animate-zoomIn {
+    animation: zoomIn 2s;
+}
+
+.animate-flipInX {
+    animation: flipInX 2s;
+}
+
+.animate-rotate {
+    animation: rotate 4s infinite;
+}
+
+.animate-flipInY {
+    animation: flipInY 2s;
+}
+
+.animate-slideInLeft {
+    animation: slideInLeft 2s;
+}
+
+.animate-slideInUp {
+    animation: slideInUp 2s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+}
+
+@keyframes flipInX {
+    from {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes flipInY {
+    from {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .logo {
+        height: 100px;
+        width: 90px;
+    }
+    
+    #tabs {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    #register {
+        margin-top: 10px;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    .intro {
+        font-size: 18px;
+    }
+    
+    .register {
+        height: 30px;
+        width: 90px;
+        font-size: 15px;
+    }
+    
+    .image-container {
+        position: relative;
+        height: 250px;
+        width: 250px;
+        margin: 20px auto;
+    }
+    
+    .side-image {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .events {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .one, .two {
+        margin-bottom: 20px;
+    }
+    
+    .poster {
+        height: 200px;
+        width: 150px;
+    }
+    
+    .ugh-hr {
+        padding: 10px;
+    }
+    
+    .last {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .last_logo {
+        font-size: 40px;
+    }
+    
+    .copy {
+        font-size: 16px;
+    }
+    
+    .logos {
+        height: 40px;
+        width: 40px;
+        margin: 5px;
+    }
+}
